@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Location Tracker with NASA Imagery</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <i class="fas fa-satellite"></i>
+      <span>Live Tracker</span>
+    </div>
+    <div class="nav-links">
+      <a href="#map">Map</a>
+      <a href="#nasa-imagery">NASA Imagery</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>Live Location Tracker</h1>
+      <p>Track your real-time location with NASA satellite imagery.</p>
+    </header>
+
+    <div class="map-container">
+      <div id="map"></div>
+      <div class="location-info">
+        <p><i class="fas fa-location-dot"></i> Your current location: <span id="location">Loading...</span></p>
+      </div>
+    </div>
+
+    <div class="nasa-imagery" id="nasa-imagery">
+      <h2><i class="fas fa-satellite"></i> NASA Satellite Imagery</h2>
+      <div class="image-container">
+        <img id="nasa-image" src="" alt="NASA Satellite Image">
+        <p id="nasa-info">Loading satellite imagery...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

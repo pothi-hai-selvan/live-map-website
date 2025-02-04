@@ -1,0 +1,149 @@
+ /* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f0f0f;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .navbar .logo i {
+    color: #6a11cb;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #6a11cb;
+  }
+  
+  /* Container */
+  .container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    color: #b3b3b3;
+    font-size: 1rem;
+  }
+  
+  /* Map Container */
+  .map-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #map {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .location-info {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .location-info i {
+    color: #6a11cb;
+    margin-right: 0.5rem;
+  }
+  
+  /* NASA Imagery */
+  .nasa-imagery {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nasa-imagery h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  #nasa-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #nasa-info {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .navbar {
+      padding: 1rem;
+    }
+  
+    .navbar .logo {
+      font-size: 1rem;
+    }
+  
+    .navbar .nav-links {
+      gap: 1rem;
+    }
+  }
